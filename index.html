@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        margin: 0px;
+    }
+    .grid-main{
+        display: grid;
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: "socialmedia iamge";
+        background-color: gray;
+        color: #444;
+    }
+    .image-section{
+        grid-area: image;
+        text-align: center;
+    }
+    .image-section img{
+        height: 100%;
+        width: 100%;
+        grid-area: image;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .image-section image::before{
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        transform: skew(60deg);
+    }
+    .social-media{
+        grid-area: socialmedia;
+    }
+    .social-media a{
+        display: block;
+        border: 1px solid black;
+        line-height: 25px;
+        margin: 15px auto;
+        -webkit-box-shadow: 0px 1px 1px #de1dde;
+        -moz-box-shadow: 0px 1px 1px #de1dde;
+        background:gray;
+        width: 20px;
+        text-decoration: none;
+        padding: 15px;
+        color: wheat;
+        text-align: center;
+        border-radius: 10px;
+        
+    }
+    .img-container{
+
+    }
+
+
+</style>
+<body>
+<h6>comit test</h6>
+<a>text sample </a>
+<main class="grid-main">
+    <div class="img-container">
+        <div class="image-section"><img src="necessery.jpg"/></div>
+    </div>
+    <div class="social-media">
+        <a class="fa fa-phone"></a>
+        <a class="fa fa-phone"></a>
+        <a class="fa fa-phone"></a>
+        <a class="fa fa-phone"></a>
+        <a class="fa fa-phone"></a>
+        <a class="fa fa-phone"></a>
+    </div>
+</main>
+</body>
+</html>
